@@ -1,0 +1,296 @@
+/* Global */
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* h1 = Brand name, h2 = section titles, h3 = food names, h4 = quantities*/
+header {
+    width: 100%;
+    height: 35vh;
+    background-color: #a1e681;
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+/* Build your profile */
+#profile {
+    width: 70%;
+    background-color: antiquewhite;
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+input[type=text] {
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid #DBDADA;
+}
+input[type=text]:focus {
+    outline: 0;
+    border: none;
+    border: 2px solid #A5A5A5;
+}
+#profile .btn {
+    width: 200px;
+    margin-top: 20px;
+}
+.btn {
+    border: none;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: 145px;
+    background-color: #da7070;
+    box-shadow: 0 5px 10px #888888;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+h3.btn {
+    text-align: center;
+}
+.btn:hover, .btn:focus {
+    outline: 0;
+    background-color: #a1e681;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.btn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+    transition: 0.2s;
+}
+#genderError,#intError,#ageError,#healthError {
+    color: #da7070;
+}
+fieldset {
+    border: none;
+}
+
+/* Everything after profile */
+#continue {
+    display: none;
+}
+
+/* Directory */
+#items {
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+.tabMenu {
+    text-align: center;
+}
+.tabMenu .tab {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    width: 150px;
+    font-size: 1.25rem;
+    background-color: transparent;
+    font-weight: 700;
+}
+.tabMenu button:hover {
+    cursor: pointer;
+    color: #da7070;
+    border-radius: 10px;
+}
+.tabMenu button:focus {
+    outline: 0;
+    color: #da7070;
+}
+.tab.checked {
+    color: #da7070;
+    background-color: antiquewhite;
+    box-shadow: 0 35px 1px antiquewhite;
+    border-radius: 10px 10px 0 0;
+}
+#directory {
+    margin-top: 10px;
+    height: 70%;
+    background-color: antiquewhite;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.recBttns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recBttns .btn {
+    margin: 30px 20px;
+}
+h4 {
+    display: inline-block;
+    background-color: white;
+    padding: 0 15px;
+    height: 20px;
+}
+.container {
+    width: 250px;
+    height: 380px;
+    background-color: #da7070;
+    margin: 10px;
+    padding: 50px;
+}
+.container:hover, .container:focus {
+    outline: 0;
+    box-shadow: 0px 5px 10px #7a3b3b;
+}
+.container img {
+    width: 350px;
+    height: 155px;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 5px -50px;
+    object-fit: cover;
+}
+.container p:last-of-type {
+    margin-bottom: 20px;
+}
+.container button {
+    background-color: antiquewhite;
+    border: 3px solid antiquewhite;
+    padding: 0 10px;
+    height: 20px;
+}
+.container button:first-of-type {
+    border-radius: 10px 0 0 10px;
+}
+.container button:last-of-type {
+    border-radius: 0 10px 10px 0;
+}
+.container button:hover, .container button:focus {
+    outline: 0;
+    cursor: pointer;
+    background-color: brown;
+    border: 3px solid brown;
+}
+.container button:active {
+    background-color: maroon;
+    border: 3px solid maroon;
+}
+.container button:focus {
+    outline: 0;
+}
+
+/* Receipt */
+#receipt {
+    min-height: 60vh;
+    width: 70%;
+    background-color: white;
+    box-shadow: 10px 10px 20px #888888, -10px 10px 20px #888888;
+    margin: 100px auto;
+    padding: 50px;
+    text-align: center;
+}
+/* all receipt items */
+.receiptItems {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+ul li {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 10px;
+}
+#receiptFood {
+    margin-right: 60%;
+    min-width: 230px;
+}
+.calGoal:focus {
+    outline: 5px solid antiquewhite;
+}
+#totalCal {
+    display: inline;
+    font-size: 1.5rem;
+}
+#recommendedCal {
+    display: inline;
+    font-size: 1.5rem;
+    color: #da7070;
+    font-weight: 700;
+}
+#calResponse {
+    max-width: 300px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+/* Email */
+#sendEmail {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: antiquewhite;
+    width: 70vw;
+    padding: 20px;
+    border-radius: 70px;
+}
+.send { 
+    font-size: 1rem;
+    width: 70px;
+    display: inline;
+    border: none;
+    background-color: #da7070;
+    border-radius: 15px;
+    padding: 3px;
+}
+.send:hover, .send:focus {
+    background-color: brown;
+    outline: 0;
+    cursor: pointer;
+}
+.send:active {
+    background-color: maroon;
+}
+/* Footer */
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* For smaller screens */
+@media (max-width: 1250px) {
+    .directory {
+        padding: 50px;
+    }
+    #receiptFood {
+        margin-right: 30%;
+    }
+}
+@media (max-width: 600px) {
+    .tabs h2 {
+        display: block;
+    }
+    #receipt {
+        margin-top: 250px;
+    }
+    #receiptFood {
+        margin-right: 0;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
